@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>商品图片预览</title>
+  <link rel="stylesheet" href="gallery.css" />
+</head>
+<body>
+  <header class="toolbar">
+    <div class="toolbar-left">
+      <h1>商品图片</h1>
+      <p id="page-meta" class="page-meta"></p>
+    </div>
+    <div class="toolbar-actions">
+      <span id="count-text" class="count-text">已选 0 / 0</span>
+      <button type="button" id="btn-all" class="btn btn-ghost">全选</button>
+      <button type="button" id="btn-invert" class="btn btn-ghost">反选</button>
+      <button type="button" id="btn-download" class="btn btn-primary">下载选中</button>
+    </div>
+  </header>
+
+  <div id="status-bar" class="status-bar" hidden></div>
+  <main id="grid" class="grid"></main>
+  <p id="empty" class="empty" hidden>没有可展示的图片</p>
+
+  <script src="gallery.js"></script>
+</body>
+</html>
